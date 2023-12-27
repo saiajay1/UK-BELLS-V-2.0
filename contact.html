@@ -174,40 +174,25 @@
                             </div>
                             
                             <div class="col-md-7 offset-md-1">
-                                <!-- Contact Form -->
-                                <form class="form contact-form" id="contact_form">
-                                    <form action="https://formsubmit.co/ch.ajay1707@gmail.com" method="POST" />
-                                    
-                                    <div class="row mb-30">
-                                        <div class="col-lg-6 mb-md-30">                                            
-                                            <!-- Name -->
-                                            <label for="name" class="visually-hidden">Name</label>
-                                            <input type="text" name="name" id="name" class="input-lg input-circle form-control" placeholder="Name" pattern=".{3,100}" required aria-required="true">
-                                            <!-- End Name -->
+                                <div class="container">
+                                    <h1>FormSubmit Demo</h1>
+                                    <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+                                      <div class="form-group">
+                                        <div class="form-row">
+                                          <div class="col">
+                                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                          </div>
+                                          <div class="col">
+                                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                          </div>
                                         </div>
-                                        
-                                        <div class="col-lg-6">
-                                            <!-- Email -->
-                                            <label for="email" class="visually-hidden">Email</label>
-                                            <input type="email" name="email" id="email" class="input-lg input-circle form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
-                                            <!-- End Email -->
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Message -->
-                                    <div class="mb-50">
-                                        <label for="message" class="visually-hidden">Message</label>
-                                        <textarea name="message" id="message" class="input-lg input-circle form-control" style="height: 130px;" placeholder="Message"></textarea>
-                                    </div>
-                                    <!-- End Message -->
-                                    
-                                    <div class="row">
-                                        
-                                        <div class="col-xs-4 col-lg-6 mb-md-30">                                            
-                                            <!-- Send Button -->                                               
-                                            <button class="submit_btn btn btn-mod btn-ellipse" data-btn-animate="ellipse" id="submit_btn" aria-controls="result">Send Message</button>                                                                                     
-                                        </div>
-                                        
+                                      </div>
+                                      <div class="form-group">
+                                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                                      </div>
+                                      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                                    </form>
+                                  </div>
                                         <div class="col-xs-8 col-lg-6 d-flex align-items-center">                                            
                                             <!-- Inform Tip -->
                                             <div class="form-tip">
